@@ -16,8 +16,6 @@ pub fn part1(input: &str) -> i32 {
             println!("{game_id}");
         }
 
-        let mut cfg: HashMap<&str, i32> = HashMap::from([("red", 12), ("green", 13), ("blue", 14)]);
-
         let mut valid: bool = true;
 
         'parse_game: for game in full[1].split(";") {
@@ -26,6 +24,9 @@ pub fn part1(input: &str) -> i32 {
             }
 
             for play in game.split(",") {
+                let mut cfg: HashMap<&str, i32> =
+                    HashMap::from([("red", 12), ("green", 13), ("blue", 14)]);
+
                 if DEBUG {
                     println!("Play --> {play}");
                 }
@@ -73,6 +74,6 @@ mod tests {
 
     #[test]
     pub fn part1_input() {
-        assert_eq!(part1(INPUT), 177)
+        assert_eq!(part1(INPUT), 2449)
     }
 }
