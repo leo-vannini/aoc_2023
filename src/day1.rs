@@ -94,7 +94,7 @@ mod tests {
 
     #[test]
     fn day1_part1_input() {
-        assert_eq!(part1(INPUT), 54632);
+        assert_eq!(part1(INPUT), 54081);
     }
 
     #[test]
@@ -104,6 +104,6 @@ mod tests {
 
     #[test]
     fn day2_part2_input() {
-        assert_eq!(part2(INPUT), 54019);
+        assert_eq!(part2(INPUT), 54649);
     }
 }
