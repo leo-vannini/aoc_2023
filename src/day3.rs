@@ -32,10 +32,6 @@ pub fn part1(input: &str) -> i32 {
             println!("{}", i + 1);
         }
 
-        if false {
-            println!("")
-        }
-
         for j in 0..vec[i].len() {
             if vec[i - 1][j].is_numeric() {
                 upper.buf.push(vec[i - 1][j]);
